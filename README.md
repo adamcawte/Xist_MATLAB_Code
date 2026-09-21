@@ -2,10 +2,10 @@
 
 This repository is to support the following paper : Cawte et al - A contact-mediated transfer mechanism directs in cis localization and spread of Xist RNA.
 
-To use this analysis pipeline you must have: TrackMate installed in Fiji to analyse the "Sample data" or your own data as desired and @msdanalyzer installed in Matlab (supporting documentation found here - https://tinevez.github.io/msdanalyzer/)
+To use this analysis pipeline you must have: TrackMate installed in Fiji to analyse the data as desired and @msdanalyzer installed in Matlab (supporting documentation found here - https://tinevez.github.io/msdanalyzer/)
 
 Once installed, you can run Trackmate as desired and output the data to separate folders. Then in Matlab, the "Import" scripts can be used as needed, depending on your source/analysis (i.e. MSD/tracking, XYZ volume quantification, Xist spreading etc.)
-These imports will import separate files and treat them independently as individually cropped cells. See "Sample data" for examples of cropped nuclei.
+These imports will import separate files and treat them independently as individually cropped cells.
 
 - Area import for Xist Area calculation from 2h Xist spreading data. (requires Trackmate Spots .csv output)
 - ImportFociXYZ for Xist, number, volume and NND calculation (requires Trackmate Spots .csv output) 

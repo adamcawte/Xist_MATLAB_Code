@@ -1,7 +1,14 @@
 function [CVs, LT400s] = NNT_Quant(Tracks)
 
+%This code quantifies the distances between nearest neighbor pairs over time from multiple cells separately. The outputs are currently set to the change in values for NNDs between 
+%paired foci (CVs). The script also outputs the paired distances over time for foci which are on average less than 400 nm apart (LT400s), this can be altered in line 12. To confirm that 
+%the trajectories are fit correctly with the maximum likelihood estimation, a graph of all paired trajectories and the fits is produced. These fitting parameters can be altered in 
+%line 97 within the findchangepoints_YL function to better define the change points (CPs).
+
 [PairedTracks, PairedIndexes] = MultiPairTracks(Tracks)
 [Distance, Frames, CPs, CVs] = MultiPairDist(PairedTracks, PairedIndexes)
+
+%edit 0.4 value to alter filtering of tracks
 out1 = cellfun(@(x) x < 0.4, Distance, 'UniformOutput', false)
 
 num = [];

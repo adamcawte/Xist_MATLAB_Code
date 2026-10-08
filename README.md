@@ -1,6 +1,6 @@
 # Xist_MATLAB_Code
 
-This repository is to support the following paper : Cawte et al - A contact-mediated transfer mechanism directs in cis localization and spread of Xist RNA.
+This repository is to support the following paper : Cawte et al - A contact-mediated transfer mechanism directs in cis localization and spread of Xist RNA. https://doi.org/10.64898/2026.10.02.756235
 
 To use this analysis pipeline you must have: TrackMate installed in Fiji to analyse the data as desired and @msdanalyzer installed in Matlab (supporting documentation found here - https://tinevez.github.io/msdanalyzer/)
 
